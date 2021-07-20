@@ -1,0 +1,10 @@
+#Ação que faz o Gazebo percorrer uma quantidade de passos discretos no tempo
+#Da maneira que está configurado atualmente, 1 passo vale 1 milissegundo
+#number --> informa qual valor final de iterações desejado
+#completed --> informa ao final do processo qual valor de iterações foi atingido
+#current --> no momento, não está sendo utilizado
+uint32 number
+---
+uint32 completed
+---
+uint32 current

@@ -1,0 +1,17 @@
+#Este serviço consulta o objetivo atual de um drone
+#droneNumber --> número do drone relevante
+#seqNum --> número de sequência do comando
+#pose --> pose do comando
+#takeoff --> indica se é decolagem
+#land --> indica se é pouso
+#landAt --> se verdadeiro, a pose é relevante para o pouso
+#actionState --> estado da ação no momento da requisição, conforme definido em CoreWaypoint.h 
+uint16 droneNumber
+---
+uint16 droneNumber
+uint32 seqNum
+geometry_msgs/Pose pose
+uint8 takeoff
+uint8 land
+uint8 landAt
+uint8 actionState

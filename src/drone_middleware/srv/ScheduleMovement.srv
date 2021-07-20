@@ -1,0 +1,11 @@
+#Este serviço escalona um comando de velocidade para CoreTeleoperator
+#droneNumber --> número do drone
+#startAt --> quando deve ocorrer
+#movement --> velocidade que deve ser desenvolvida
+#success --> indica se o movimento foi corretamente adicionado à fila
+#O drone seguirá com essa velocidade até receber outro comando
+uint16 droneNumber
+time startAt
+geometry_msgs/Twist movement
+---
+uint8 success

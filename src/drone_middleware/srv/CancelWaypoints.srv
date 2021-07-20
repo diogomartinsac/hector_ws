@@ -1,0 +1,13 @@
+#Este serviço cancela comandos que estejam atualmente sendo executados ou que falharam
+#pode cancelar objetivo atual e também objetivos na fila
+#all --> booleano, informa se a ação é para todos os drones
+#droneNumber --> informa número do drone se all for falso
+#cancelCurrent --> booleano, se verdadeiro cancela objetivo atual
+#clearQueue --> booleano, se verdadeiro limpa a fila de objetivos
+#numCanceled --> informa quantos objetivos foram cancelados no total
+uint8 all
+uint16 droneNumber
+uint8 cancelCurrent
+uint8 clearQueue
+---
+uint16 numCanceled

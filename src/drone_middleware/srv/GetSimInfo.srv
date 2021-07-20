@@ -1,0 +1,18 @@
+#este serviço fornece informações da simulação do gazebo
+#startTime --> tempo real em que a simulação começou
+#realTime --> tempo real atual, se subtrair startTime, terá a duração
+#simTime --> quantidade de tempo simulada
+#pauseTime --> tempo de pausa (de acordo com world_stats.proto do Gazebo)
+#iterations --> número de iterações já realizadas nessa simulação
+#iterationGoal --> objetivo atual de iterações
+#paused --> booleano, informa se a simulação está pausada
+#stepping --> booleano, informa se a simulação está efetuando algum passo discreto no tempo
+---
+time startTime
+time realTime
+time simTime
+time pauseTime
+uint64 iterations
+uint64 iterationGoal
+uint8 paused
+uint8 stepping

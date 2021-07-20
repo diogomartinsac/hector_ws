@@ -1,0 +1,9 @@
+#Este serviço limita a velocidade máxima com que os drones podem se mover
+#Se velocidades muito altas forem permitidas, comandos como pouso podem falhar, por exemplo
+#all --> booleano, se verdadeiro esse limite é para todos os drones, se falso, apenas um
+#droneNumber -->  drone relevante, se all for falso
+#limit --> limites de velocidade em cada eixo
+uint8 all
+uint16 droneNumber
+geometry_msgs/Twist limit
+---

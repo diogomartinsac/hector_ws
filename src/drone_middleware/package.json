@@ -1,0 +1,14 @@
+{
+    "coloredRegions": 
+    {
+        "namedColors":
+        {
+            "main": "rgba(10, 10, 220, 0.2)",
+            "doc": "rgba(80, 160, 210, 0.3)",
+            "class": "rgba(90, 40, 150, 0.3)",
+            "func": "rgba(120, 20, 20, 0.2)",
+            "callback": "rgba(150, 230, 100, 0.1)",
+            "include": "rgba(190, 190, 120, 0.2)"
+        }
+    }
+}

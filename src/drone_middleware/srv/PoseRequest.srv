@@ -1,0 +1,9 @@
+#Este serviço requisita a pose de um drone
+#all --> booleano, se verdadeiro requisita todas as posições
+#droneNumber --> número do drone, caso all seja falso
+#currentPose --> poses requisitadas, na forma de um vetor unidimensional, a ordem define o número do drone
+#exemplo: currentPose[0] é a posição do drone 0
+uint8 all
+uint16 droneNumber
+---
+geometry_msgs/PoseStamped[] currentPose

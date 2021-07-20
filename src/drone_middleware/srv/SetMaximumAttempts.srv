@@ -1,0 +1,6 @@
+#Este serviço informa para CoreWaypoint quantas vezes um comando pode falhar
+#Se um comando falhar "maximumAttempts" vezes ele receberá um estado de falha
+#Em estado de falha o drone não executa mais nenhum comando de sua fila
+#Para retirar esse estado é necessário cancelar o objetivo atual do drone em questão
+uint8 maximumAttempts
+---

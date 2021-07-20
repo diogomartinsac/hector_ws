@@ -1,0 +1,14 @@
+#este serviço fornece dados do heatmap atual
+#x_min --> valor mínimo de x da área relevante
+#y_min --> valor mínimo de y da área relevante
+#width --> largura da área relevante
+#n_cells --> quantas células cabem na largura (tamanho do lado em células)
+#heatMap --> vetor unidimensional contendo os dados de todas as células
+#heatMap[0] é o valor da celula[0][0]
+#heatmap[(n_cells*n_cells) - 1] é o valor dá ultima célula (celula[n_cells-1][n_cells-1])
+---
+float64 x_min
+float64 y_min
+float64 width
+uint16 n_cells
+uint16[] heatMap

@@ -1,0 +1,19 @@
+#Este serviço escalona um comando de posição para um drone
+#droneNumber --> número do drone
+#seqNum -->  número de sequência único
+#cada drone tem sua própria ordem de números de sequência, mas para um mesmo drone não deve ser duplicado
+#se zero for usado, ele será substituído por outro número e colocado no fim da fila existente
+#pose --> pose que o drone deve atingir
+#takeoff --> se verdadeiro o drone vai apenas "decolar", ou seja, ligar os motores e permitir movimentação
+#land --> se verdadeiro, o drone irá pousar
+#landAt --> necessita que land seja verdadeiro, se falso, drone ignora pose e pousa diretamente abaixo
+#se landAt for verdadeiro, considera pose para pousar, porém position.z (altura) é sempre ignorado
+#success --> informa se movimento foi corretamente escalonado
+uint16 droneNumber
+uint32 seqNum
+geometry_msgs/Pose pose
+uint8 takeoff
+uint8 land
+uint8 landAt
+---
+uint8 success
